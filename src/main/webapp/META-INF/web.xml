@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>WEB-INF/vue/index.jsp</welcome-file>
+    </welcome-file-list>
+    <!-- Servlet for Project -->
+    <servlet>
+        <servlet-name>ProjectServlet</servlet-name>
+        <servlet-class>com.example.project.ProjetServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProjectServlet</servlet-name>
+        <url-pattern>/projet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for Don -->
+    <servlet>
+        <servlet-name>DonServlet</servlet-name>
+        <servlet-class>com.example.project.DonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DonServlet</servlet-name>
+        <url-pattern>/dons</url-pattern>
+    </servlet-mapping>
+
+    <!-- Servlet for User -->
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.example.project.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/User</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
+
+
+
